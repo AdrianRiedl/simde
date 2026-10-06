@@ -1657,7 +1657,6 @@ test_simde_mm_cmpistrz(SIMDE_MUNIT_TEST_ARGS) {
   return 0;
 }
 
-#if 0 // These are not yet implemented
 
 static int
 test_simde_mm_cmpestri(SIMDE_MUNIT_TEST_ARGS) {
@@ -3442,16 +3441,15 @@ test_simde_mm_cmpistro(SIMDE_MUNIT_TEST_ARGS) {
   return 0;
 }
 
-#endif  // unimplemented functions
 
 // end test values from sse2neon
 
 SIMDE_TEST_FUNC_LIST_BEGIN
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestra)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrc)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestri)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrm)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestro)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestra)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrc)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestri)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrm)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestro)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrs)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrs_8)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrs_16)
@@ -3459,11 +3457,11 @@ SIMDE_TEST_FUNC_LIST_BEGIN
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrz_8)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpestrz_16)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpgt_epi64)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistra)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrc)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistri)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrm)
-  // SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistro)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistra)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrc)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistri)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrm)
+  SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistro)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrs)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrs_8)
   SIMDE_TEST_FUNC_LIST_ENTRY(mm_cmpistrs_16)
